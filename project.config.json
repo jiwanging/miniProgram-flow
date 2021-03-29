@@ -42,7 +42,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.16.0",
   "appid": "wx9d66c2e9c09d7e3d",
-  "projectname": "miniprogram-1",
+  "projectname": "miniprogram-flow",
   "debugOptions": {
     "hidedInDevtools": []
   },
