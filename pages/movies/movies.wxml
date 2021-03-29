@@ -1,0 +1,18 @@
+<!--pages/movies/movies.wxml-->
+  <l-search-bar class = "search-bar" placeholder="搜索" bg-color = "#ffffff" 
+  shape="circle" placeholder = "请输入搜索关键字" bind:linconfirm = "onConfirm"
+  bind:lincancel = "onCancelSearch"/>
+  <view wx:if="{{!isSearch}}">
+    <movie-list data-type = "hotMovie" out-class="movie-list" catch:tap = "onMoreMovie" movieInfo = "{{serverRes_hot}}" titleDisable = "{{true}}" listTitle = "正在上映"></movie-list>
+  <movie-list data-type = "comingMovie" out-class="movie-list" bind:tap = "onMoreMovie" movieInfo = "{{serverRes_coming}}" titleDisable = "{{true}}" listTitle = "即将上映"></movie-list>
+  <movie-list data-type = "rangeMovie" out-class="movie-list" bind:tap = "onMoreMovie" movieInfo = "{{serverRes_range}}"  titleDisable = "{{true}}" listTitle = "排行榜"></movie-list>
+  </view>
+
+  <view class = "search-container">
+  <block wx:for="{{searchInfo}}">
+    <movie class = "movieItem" name='{{item.title}}' image='{{item.images.large}}' score="{{item.rating.average}}"></movie>
+  </block>
+</view>
+  
+
+

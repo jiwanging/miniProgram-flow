@@ -1,0 +1,15 @@
+<!--components/movie-list/index.wxml-->
+<view class="container out-class">
+  <view wx:if = "{{titleDisable}}" class="title-container">
+    <text>{{listTitle}}</text>
+    <text class="moreMovie" bing:tap = "onMoreMovie">更多》</text>
+  </view>
+  <view class="movie_container" >
+    <block wx:for="{{movieInfo}}" wx:key="index" >
+      <movie wx:if="{{index < 3}}" name="{{item.title}}" image='{{item.images.large}}' score="{{item.rating.average}}"></movie>
+    </block>
+  </view>
+</view>
+
+
+

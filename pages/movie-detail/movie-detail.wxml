@@ -1,0 +1,59 @@
+<!--pages/movie-detail/movie-detail.wxml-->
+  <image class="head-img" src="{{serverRes_hot[0].images.large}}"></image>
+  <image class="movie-img"  bindtap = "onLargeView"  src="{{serverRes_hot[0].images.large}}"></image>
+  <text class="movie-title">{{serverRes_hot[0].title}}</text>
+  <view class="movie-palce-year">
+    <text class="movie-countries">{{serverRes_hot[0].countries+">>"}}</text>
+    <text class="movie-year">{{serverRes_hot[0].year}}</text>
+  </view>
+  <view class="movie-wish-review">
+    <text class="wish-review">{{serverRes_hot[0].wish_count}}</text>
+    <text>人喜欢</text>
+    <text class="wish-review">{{serverRes_hot[0].comments_count}}</text>
+    <text>条评论</text>
+  </view>
+  <view class="movie-mini-title">
+    <text >{{serverRes_hot[0].title}}</text>
+  </view>
+  <view class="movie-info">
+    <view class="info-item">
+      <text>评分  </text>
+      <l-rate score="{{serverRes_hot[0].rating.average/2}}"></l-rate>
+      <text>{{serverRes_hot[0].rating.average}}</text>
+    </view>
+    <view class="info-item">
+      <text>导演  </text>
+      <text>{{serverRes_hot[0].directors[0].name}}</text>
+    </view>
+    <view class="info-item">
+      <text>主演  </text>
+      <block wx:for="{{serverRes_hot[0].casts}}">
+        <text>{{item.name}}</text>
+        <text>/</text>
+      </block>
+    </view>
+  </view>
+  <view class="horzon">
+  </view>
+  <view class="movie-summary">
+    <text class="movie-summary-title" >影片介绍</text>
+    <text class="movie-summary-content">{{serverRes_hot[0].summary}}</text>
+  </view>
+  <view class="horzon">
+  </view>
+  <text class="star-img-title">影人</text>
+  <scroll-view class="star-img-container" scroll-x="{{true}}" >
+      <block wx:for="{{serverRes_hot[0].casts}}">
+        <!-- <view class="img-item""> -->
+          <image class="star-img"  src="{{item.avatars.large}}"></image>
+          <text class="star-name">{{item.name}}</text>
+        <!-- </view> -->
+      </block>
+      <block wx:for="{{serverRes_hot[0].casts}}">
+        <!-- <view class="img-item""> -->
+          <image class="star-img"  src="{{item.avatars.large}}"></image>
+          <text class="star-name">{{item.name}}</text>
+        <!-- </view> -->
+      </block>
+  </scroll-view>
+

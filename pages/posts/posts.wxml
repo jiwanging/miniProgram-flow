@@ -1,0 +1,37 @@
+<!--pages/posts/posts.wxml-->
+<view class="swiper-container">
+  <swiper autoplay="{{true}}" indicator-dots="{{true}}">
+        <block>
+          <swiper-item>
+            <image bind:tap = "onGoToDetail" src="/image/swiper/swiper1.png"></image>
+          </swiper-item>
+        </block>
+        <block>
+          <swiper-item>
+            <image bind:tap = "onGoToDetail" src="/image/swiper/swiper2.png"></image>
+          </swiper-item>
+        </block>
+        <block>
+          <swiper-item>
+            <image bind:tap = "onGoToDetail" src="/image/swiper/swiper3.png"></image>
+          </swiper-item>
+        </block>
+  </swiper>
+  </view>
+  <block wx:for="{{posts}}" wx:for-item = "item" wx:key="index">
+  <view data-id="{{item.postId}}" bind:tap = "showPostDetail" class="post-container">
+    <view class="post_author_date"> 
+    <image class="post-author" src="/image/welcome.jpg"></image>
+    <text class="post-date">{{item.post_date}}</text>
+    </view>
+    <text class="post-title">"{{item.post_title}}"</text>
+    <image class="post-image" src="{{item.src_path}}"></image>
+    <text class="post-content">{{item.post_content}}</text>
+    <view class="post-like">
+      <l-icon color = "#666" size = "32" name = "favor"></l-icon>
+      <text class="post-like-font">{{item.favor_num}}</text>
+      <l-icon color = "#666" size = "32" name = "eye"></l-icon>
+      <text class="post-like-font">{{item.eye_num}}</text>
+    </view>
+  </view>
+</block>

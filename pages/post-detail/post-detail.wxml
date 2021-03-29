@@ -1,0 +1,31 @@
+<!--pages/post-detail/post-detail.wxml-->
+<view class="container">
+  <view>
+    <image wx:if="{{!isPlay}}"   class="audio"  bind:tap = "onMusic" src="/image/music/start.png"></image>
+    <image wx:else  class="audio"  bind:tap = "onMusic"  bind:tap = "onMusicPause" src="/image/music/pause.png"></image>
+  </view>
+  
+  <image class = "image-detail" src="{{src_path}}"></image>
+  <view class="title-detail">
+    <image class = "image-title-detail" src="/image/welcome.jpg"></image>
+    <text class="name-title-detail">{{post_date}}</text>
+    <text class="published-title-detail">发表于</text>
+    <text class="published-time-title-detail">24小时前</text>
+  </view>
+<text class="airticle-detail">{{post_title}}</text>
+
+<view class="tool">
+  <view class="like-share">
+    <view bindtap="onChangeCollectedStatus">
+      <image class = "image-like-share" wx:if="{{collected}}" src="/image/collected.png"></image>
+    <image class = "image-like-share" wx:if="{{!collected}}" src="/image/uncollected.png"></image>
+    </view>
+    <image class = "image-like-share" bind:tap="OnShare" src="/image/share.png"></image>
+  </view>
+    <view class="like-share-horizon">
+  </view>
+</view>
+
+<text class="content-detail">{{post_content}}</text>
+</view>
+

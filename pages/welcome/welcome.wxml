@@ -1,0 +1,16 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="view-container">
+  <image 
+    class = "title-image"
+    src="/image/welcome.jpg">
+  </image>
+
+  <text class = "text-css">
+    hello 既望 
+  </text>
+
+  <view class="button-container" bind:tap="startminiprogram">
+    <text class="button">开启小程序之旅</text>
+  </view>
+</view>
+

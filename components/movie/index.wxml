@@ -1,0 +1,9 @@
+<!--components/movie/index.wxml-->
+<view class="container">
+  <image class="poster" src="{{image}}"></image>
+  <text class="title">{{name}}</text>
+  <view class="rate-score">
+    <l-rate class="rate" disable = "{{false}}" score="{{score/2}}" size = "24" item-gap="8rpx"></l-rate>
+    <text class="{{score/2}}">{{score}}</text>
+  </view>
+</view>

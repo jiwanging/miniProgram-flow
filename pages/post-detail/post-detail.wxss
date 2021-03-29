@@ -1,0 +1,85 @@
+/* pages/post-detail/post-detail.wxss */
+.container{
+  display: flex;
+  width: 100%;
+  margin-top: -200rpx;
+}
+
+.audio{
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  margin-top: 140rpx;
+  opacity: 0.5;
+}
+
+.image-detail{
+  width: 100%;
+  height: 400rpx;
+}
+
+.title-detail{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+
+.image-title-detail{
+  width: 60rpx;
+  height: 60rpx
+}
+
+.name-title-detail{
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.published-title-detail{
+  margin-left: 20rpx;
+
+}
+
+.published-time-title-detail{
+  margin-left: 20rpx;
+}
+
+.airticle-detail{
+  font-size: 50rpx;
+  margin-left: 20rpx;
+  margin-top: 30prpx;
+}
+
+.tool{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.like-share{
+  display: flex;
+  width: 660rpx;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.image-like-share{
+  width: 55rpx;
+  height: 60rpx;
+  margin-left: 30rpx;
+  margin-right: 15rpx;
+}
+
+.like-share-horizon{
+  width: 660rpx;
+  height: 1px;
+  background-color:  #e5e5e5;
+  position: relative;
+  margin-top: 30rpx;
+}
+
+.content-detail{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+}

@@ -1,0 +1,8 @@
+<!--pages/more-movie/more-movie.wxml-->
+<view class = "container">
+  <block wx:for="{{serverRes}}">
+  <movie data-id = "{{index}}" bindtap = "onGoToDetail" class = "movieItem" name='{{item.title}}' image='{{item.images.large}}' score="{{item.rating.average}}"></movie>
+</block>
+</view>
+
+

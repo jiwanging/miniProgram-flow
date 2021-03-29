@@ -1,0 +1,105 @@
+/* pages/movie-detail/movie-detail.wxss */
+.head-img{
+  width: 100%;
+  height: 330rpx;
+  -webkit-filter: blur(20rpx);
+}
+
+.movie-img{
+  height: 238rpx;
+  width: 175rpx;
+  position: absolute;
+  top:160rpx;
+  right: 30rpx;
+}
+
+.movie-title{
+  font-size: 40rpx;
+  color:#fff;
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+}
+
+.movie-palce-year{
+  color:#fff;
+  position: absolute;
+  top: 110rpx;
+  left: 40rpx;
+}
+
+.movie-wish-review{
+  position: absolute;
+  top: 210rpx;
+}
+
+.wish-review{
+  color:rgb(255, 6, 6);
+  margin-left: 40rpx;
+}
+
+.movie-mini-title{
+  margin-left: 40rpx;
+}
+
+.movie-info{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+
+.info-item{
+  margin-top: 20rpx;
+}
+
+.horzon{
+  width: 100%;
+  height: 1rpx;
+  background-color: #020202;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.movie-summary{
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-summary-title{
+  margin-left: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.movie-summary-content{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.star-img-container{
+  height: 400rpx;
+  white-space: nowrap;
+}
+.star-img-title{
+  margin-bottom: 30rpx;
+  margin-left: 40rpx;
+}
+
+.star-img{
+  width: 170rpx;
+  height: 300rpx;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+
+.img-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.star-name{
+  margin-top: 10rpx;
+  position: absolute;
+  top: 320rpx;
+  margin-left: -130rpx;
+}

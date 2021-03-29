@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/posts/posts",
+    "pages/post-detail/post-detail",
+    "pages/movies/movies",
+    "pages/more-movie/more-movie",
+    "pages/movie-detail/movie-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#C22A1E",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "entryPagePath": "pages/welcome/welcome",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "阅读",
+        "iconPath": "/image/music/start.png",
+        "selectedIconPath": "/image/music/pause.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/image/music/start.png",
+        "selectedIconPath": "/image/music/pause.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "usingComponents": {
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index",
+    "l-avatar": "/miniprogram_npm/lin-ui/avatar/index",
+    "l-rate": "/miniprogram_npm/lin-ui/rate/index",
+    "l-search-bar": "/miniprogram_npm/lin-ui/search-bar",
+    "post": "/components/post/index",
+    "movie": "/components/movie/index",
+    "movie-list": "/components/movie-list/index"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
